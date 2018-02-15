@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText edittext1;
@@ -24,29 +25,37 @@ EditText edittext1;
         setContentView(R.layout.activity_main);
     }
     public void onClick(View v) {
-        edittext1 = (EditText) findViewById(R.id.edittext1);
-        textView9 = (TextView) findViewById(R.id.textView9);
-        textView10 = (TextView) findViewById(R.id.textView10);
-        textView11 = (TextView) findViewById(R.id.textView11);
-        textView12 = (TextView) findViewById(R.id.textView12);
-        textView13 = (TextView) findViewById(R.id.textView13);
-        textView14 = (TextView) findViewById(R.id.textView14);
-        textView15 = (TextView) findViewById(R.id.textView15);
-        Double valueHungarianForint = Double.parseDouble(edittext1.getText().toString());
-        Double valueIndianRupee = valueHungarianForint * 0.2561;
-        textView9.setText(Double.toString(valueIndianRupee));
-        Double valueBahrainiDinar  = valueHungarianForint * 0.0014;
-        textView10.setText(" " +valueBahrainiDinar );
-        Double valueJapaneseYen  = valueHungarianForint * 0.4344;
-        textView11.setText(" " +valueJapaneseYen);
-        Double valueMalaysianRinggit = valueHungarianForint * 0.0156;
-        textView12.setText(" " +valueMalaysianRinggit);
-        Double valueRussianRuble = valueHungarianForint * 0.2288;
-        textView13.setText(" " +valueRussianRuble);
-        Double valueSwissFranc  = valueHungarianForint * 0.0037;
-        textView14.setText(" " +valueSwissFranc);
-        Double valueUSDollar  = valueHungarianForint * 0.0032;
-        textView15.setText(" " +valueUSDollar);
+        try {
+
+
+            edittext1 = (EditText) findViewById(R.id.edittext1);
+            textView9 = (TextView) findViewById(R.id.textView9);
+            textView10 = (TextView) findViewById(R.id.textView10);
+            textView11 = (TextView) findViewById(R.id.textView11);
+            textView12 = (TextView) findViewById(R.id.textView12);
+            textView13 = (TextView) findViewById(R.id.textView13);
+            textView14 = (TextView) findViewById(R.id.textView14);
+            textView15 = (TextView) findViewById(R.id.textView15);
+            Double valueHungarianForint = Double.parseDouble(edittext1.getText().toString());
+            Double valueIndianRupee = valueHungarianForint * 0.2561;
+            textView12.setText(Double.toString(valueIndianRupee));
+            Double valueBahrainiDinar = valueHungarianForint * 0.0014;
+            textView9.setText(" " + valueBahrainiDinar);
+            Double valueJapaneseYen = valueHungarianForint * 0.4344;
+            textView13.setText(" " + valueJapaneseYen);
+            Double valueMalaysianRinggit = valueHungarianForint * 0.0156;
+            textView10.setText(" " + valueMalaysianRinggit);
+            Double valueRussianRuble = valueHungarianForint * 0.2288;
+            textView11.setText(" " + valueRussianRuble);
+            Double valueSwissFranc = valueHungarianForint * 0.0037;
+            textView14.setText(" " + valueSwissFranc);
+            Double valueUSDollar = valueHungarianForint * 0.0032;
+            textView15.setText(" " + valueUSDollar);
+        }
+        catch(Exception e)
+        {
+            Toast.makeText(this, "Enter the values", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
