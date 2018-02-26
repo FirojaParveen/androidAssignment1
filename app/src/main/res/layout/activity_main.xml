@@ -10,47 +10,48 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="10"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="8"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Hungarian Forint"
-            android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="200dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="Hungarian Forint"
+                android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/edittext1"
-            android:layout_width="181dp"
-            android:layout_height="47dp"
-            android:layout_weight="1"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-             />
-        <Button
-            android:id="@+id/imageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/result"
-            android:onClick="onClick"
-            />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/edittext1"
+                android:layout_width="120dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter Amount"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/result"
+                android:onClick="onClick" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,6 +69,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="Bahraini Dinar "
+                android:gravity="right"
                 android:textSize="18sp"
                 android:layout_weight="6"/>
 
@@ -81,187 +83,200 @@
                 android:layout_marginTop="8dp"
                 android:hint="result1"
                 android:textSize="18sp"
+                android:gravity="left"
                 android:layout_weight="3"/>
 
 
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10">
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Malaysian Ringgit "
-        android:textSize="18sp"
-        android:layout_weight="5.5"/>
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="136dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:hint="result2"
-        android:textSize="18sp"
-        android:layout_weight="3"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10">
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="22dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Russian Ruble"
-            android:textSize="18sp"
-            android:layout_weight="6.5"/>
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="136dp"
-        android:layout_height="28dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:hint="result3"
-        android:textSize="18sp"
-        android:layout_weight="3"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10">
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="IndianRupee"
-            android:textSize="18sp"
-            android:layout_weight="7"/>
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Malaysian Ringgit "
+                android:gravity="right"
+                android:textSize="18sp"
+                android:layout_weight="5.5"/>
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="136dp"
-        android:layout_height="31dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:hint="result4"
-        android:textSize="18sp"
-        android:layout_weight="3"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10">
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="136dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="result2"
+                android:textSize="18sp"
+                android:gravity="left"
+                android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Japanese Yen "
-            android:textSize="18sp"
-            android:layout_weight="6.5"/>
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="140dp"
-        android:layout_height="33dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:hint="result5"
-        android:textSize="18sp"
-        android:layout_weight="3"/>
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Russian Ruble"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_weight="6.5"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10">
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="7.5"
-            android:text="Swiss Franc"
-            android:textSize="18sp" />
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="144dp"
-        android:layout_height="34dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:hint="result6"
-        android:textSize="18sp"
-        android:layout_weight="3"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="10">
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="136dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="result3"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="US Dollar"
-            android:textSize="18sp"
-            android:layout_weight="7"/>
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="IndianRupee"
+                android:textSize="18sp"
+                android:gravity="right"
+                android:layout_weight="7"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="136dp"
+                android:layout_height="31dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="result4"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Japanese Yen "
+                android:gravity="right"
+                android:textSize="18sp"
+                android:layout_weight="6.5"/>
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="140dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="result5"
+                android:textSize="18sp"
+                android:gravity="left"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="7.5"
+                android:text="Swiss Franc"
+                android:gravity="right"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="144dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="result6"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="US Dollar"
+                android:gravity="right"
+                android:textSize="18sp"
+                android:layout_weight="7"/>
 
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="132dp"
-            android:layout_height="29dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:hint="result7"
-            android:textIsSelectable="false"
-            android:textSize="18sp"
-            android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="132dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="result7"
+                android:gravity="left"
+                android:textIsSelectable="false"
+                android:textSize="18sp"
+                android:layout_weight="3"/>
 
-    </LinearLayout>
+        </LinearLayout>
 
 
 
